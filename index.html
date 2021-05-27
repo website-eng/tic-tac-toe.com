@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="chrome://browser/skin/aboutNetError.css" type="text/css" media="all" />
+<style>
+.all{
+margin-left:0%;
+margin-top:0%;
+}
+.field{
+width: 200px;
+border: 3px stolid #6f42c1;
+}
+.b{
+color: #fff;
+}
+.gr{
+width: 60px;
+height: 60px;
+border: 3px solid  #6f42c1;;
+float: left;
+font-size: 50px;
+}
+h1{
+color: #6f42c1;
+}
+.button {
+  background-color: #6f42c1;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button {
+border-radius: 50%;
+}
+</style>
+  </head>
+  <body>
+<div class="all">
+    <h1>Tic Tac Toe</h1>
+
+<button   onclick="document.location='https://github.com/website-eng/tic-tac-toe.com/archive/refs/heads/gh-pages.zip'"  class="button">Download</button>
+
+<button   onclick="document.location='https://website-eng.github.io/tic-tac-toe.com'"  class="button">New Game</button>
+
+<div class="field">
+<div class="gr"></div>
+<div class="gr"></div>
+<div class="gr"></div>
+
+<div class="gr"></div>
+<div class="gr"></div>
+<div class="gr"></div>
+
+<div class="gr"></div>
+<div class="gr"></div>
+<div class="gr"></div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+var count =0;
+$("h1") . text("Tic Tac Toe");
+
+$(".gr").click(function(){
+count = count+1;
+if(count%2==0){
+$(this).text("0");
+}
+else {
+$(this).text("X");
+}
+
+})
+
+</script>
+</div>
+ </body>
+</html>
